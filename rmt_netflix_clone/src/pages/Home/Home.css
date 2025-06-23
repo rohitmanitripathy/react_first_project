@@ -1,0 +1,21 @@
+.home {
+  background-color: #111111;
+  min-height: 100vh;
+}
+
+.content-rows {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+/* Ensure smooth scrolling performance */
+.home {
+  will-change: scroll-position;
+}
+
+/* Add some spacing after the header */
+.home::before {
+  content: '';
+  display: block;
+  height: 68px; /* Header height */
+}
